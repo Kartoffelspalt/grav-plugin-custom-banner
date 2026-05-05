@@ -1,3 +1,9 @@
+# v1.0.17
+## 05-05-2026
+
+1. [](#new)
+    * Added `dismiss-once` option to hide the banner permanently after clicking dismiss or action button
+
 # v1.0.16
 ## 31-01-2023
 

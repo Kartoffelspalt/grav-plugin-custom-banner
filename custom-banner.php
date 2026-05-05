@@ -127,6 +127,7 @@ class CustomBannerPlugin extends Plugin
         $button_url = $config['button-url'];
         $dismiss_text = $config['dismiss-text'];
         $dismiss_button = ($config['dismiss-button'] ? 'inline-block' : 'none');
+        $dismiss_once = ($config['dismiss-once'] ? 'true' : 'false');
 
         // Style
         $position = $config['position'];
@@ -135,12 +136,12 @@ class CustomBannerPlugin extends Plugin
         $box_shadow = ($config['box-shadow'] ? '5px 5px 0.75rem gray' : 'none');
 
         $banner = <<<EOD
-        <div class="custom-banner-container $hidden" style="$position: 1rem;">
+        <div class="custom-banner-container $hidden" data-dismiss-once="$dismiss_once" style="$position: 1rem;">
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
                 <div class="custom-banner-content" style="color: $fg_colour;">$content</div>
                 <div class="custom-banner-actions">
                     <a class="button custom-banner-dismiss" href="javascript:void(0)" onclick="custom_button_dismiss();" style="display: $dismiss_button;">$dismiss_text</a>
-                    <a class="button custom-banner-button" href="$button_url" style="display: $button;">$button_text</a>
+                    <a class="button custom-banner-button" href="$button_url" onclick="custom_button_action();" style="display: $button;">$button_text</a>
                 </div>
             </div>
         </div>
