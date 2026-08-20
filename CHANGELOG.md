@@ -1,3 +1,10 @@
+# v1.0.17
+## 20-08-2026
+
+1. [](#improved)
+	* Declare compatibility with grav 2
+
+
 # v1.0.16
 ## 31-01-2023
 
