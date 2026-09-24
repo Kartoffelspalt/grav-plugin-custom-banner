@@ -1,5 +1,19 @@
 # v1.0.17
 ## 05-05-2026
+## 20-08-2026
+
+1. [](#improved)
+	* Declare compatibility with grav 2
+
+
+# v1.0.16
+## 31-01-2023
+
+1. [](#new)
+	* German language support added (thanks Gabbalo!)
+
+# v1.0.15
+## 15-10-2022
 
 1. [](#new)
     * Added a configurable dismissal cookie lifetime
