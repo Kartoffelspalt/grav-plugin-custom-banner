@@ -123,15 +123,14 @@ form:
           options:
             1: PLUGIN_ADMIN.ENABLED
             0: PLUGIN_ADMIN.DISABLED
-        dismiss-once:
-          type: toggle
-          label: PLUGIN_CUSTOM_BANNER.DISMISS_ONCE
-          help: PLUGIN_CUSTOM_BANNER.DISMISS_ONCE_HELP
-          highlight: 0
-          default: 0
-          options:
-            1: PLUGIN_ADMIN.ENABLED
-            0: PLUGIN_ADMIN.DISABLED
+        dismiss-cookie-max-age:
+          type: number
+          label: PLUGIN_CUSTOM_BANNER.DISMISS_COOKIE_MAX_AGE
+          help: PLUGIN_CUSTOM_BANNER.DISMISS_COOKIE_MAX_AGE_HELP
+          default: 1800
+          validate:
+            min: 1
+            type: int
         cdn-fix:
           type: toggle
           label: PLUGIN_CUSTOM_BANNER.CDN_FIX

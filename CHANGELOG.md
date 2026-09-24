@@ -2,7 +2,7 @@
 ## 05-05-2026
 
 1. [](#new)
-    * Added `dismiss-once` option to hide the banner permanently after clicking dismiss or action button
+    * Added a configurable dismissal cookie lifetime
 
 # v1.0.16
 ## 31-01-2023
